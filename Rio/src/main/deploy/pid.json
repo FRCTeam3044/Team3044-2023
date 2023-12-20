@@ -1,0 +1,90 @@
+{
+    "motors": {
+        "left": {
+            "p": 0.00030,
+            "i": 0,
+            "d": 0,
+            "iz": 0,
+            "ff": 0.00015,
+            "maxOutput": 1,
+            "minOutput": -1
+        },
+        "right": {
+            "p": 0.00030,
+            "i": 0,
+            "d": 0,
+            "iz": 0,
+            "ff": 0.00015,
+            "maxOutput": 1,
+            "minOutput": -1
+        },
+        "lateral": {
+            "p": 0.00040,
+            "i": 0.0,
+            "d": 0,
+            "iz": 0,
+            "ff": 0.00020,
+            "maxOutput": 1,
+            "minOutput": -1
+        }
+    },
+    "high-level": {
+        "rotation": {
+            "maxSpeedAngleThreshold": 30,
+            "maxSpeed": 2,
+	        "minSpeed": 0.6
+        },
+        "point": {
+            "maxSpeedDistanceThreshold": 1,
+            "maxSpeed": 2,
+	        "minSpeed": 0.3,
+            "threshold": 0.03,
+            "minTime": 0.4
+        },
+        "path-accuracy": {
+            "p": 0,
+            "i": 0,
+            "d": 0
+        }
+    },
+    "high-level-sim": {
+        "rotation": {
+            "maxSpeedAngleThreshold": 30,
+            "maxSpeed": 6,
+	        "minSpeed": 0.67
+        },
+        "point": {
+            "maxSpeedDistanceThreshold": 1,
+            "maxSpeed": 2,
+	        "minSpeed": 0.3,
+            "threshold": 0.03,
+            "minTime": 0.4
+        },
+        "path-accuracy": {
+            "p": 0,
+            "i": 0,
+            "d": 0
+        }
+    },
+    "arm": {
+        "shoulder": {
+            "maxVel": 700,
+            "maxAccel": 250,
+            "minError": 0,
+            "inBotRange": 20
+        },
+        "wrist": {
+            "speed": 0.7,
+            "slowdown": 40,
+            "stop": 3
+        },
+        "telescope": {
+            "speed": 0.6,
+            "deadband": 0.02
+        }
+    },
+    "drive": {
+        "speed": 9,
+        "armOutSpeed": 3
+    }
+}
